@@ -1,0 +1,98 @@
+# This is a TOML configuration document.
+
+title = "Global Configuration"
+
+[General]
+
+  carpetDataDir = ''
+  mainRecDir = ''
+  # 0 - Head, 1 - Neck, 2 - Waist / Knee
+  sensorMacs = ["DBDE2962734F", "E662E5A8EC50", "FA985F1353DE"]
+  figTitles = ["HEAD", "NECK", "PELVIS"]
+  pitchNorm = [0, 180, 180]
+  rollNorm = [0, 90, 90]
+  yawNorm = [0, -180, -80]
+
+[Figures]
+
+# ["Pitch",   "Roll",     "Yaw"]
+# ["Sensor1", "Sensor2", "Sensor3"]
+
+  # Options: "SNS", "PRY"
+  groupBy = "SNS"
+  
+  lineWidth = 2
+  lineColors = ["#0000cc", "#336600", "#ff00ff"]
+
+  # Any number or "Disabled"
+  vertLinePos = 3.0
+  vertLineColor = "#5F021F"
+
+  [Figures.Figure1]
+  # xlim = [] for autoscale
+  # xlim = [xmin, xmax]
+  xlim = []
+  # ylim = [] for autoscale
+  # [ymin, ymax]
+  ylim = [-50, 50]
+  # xticks = [] for autoscale
+  # [start, jump, end]
+  xticks = [0.0, 10.0, 0.0]
+  # yticks = [] for autoscale
+  # [start, jump, end]
+  yticks = [-180, 10, 180]
+
+  gains = [1, 1, 1]
+  offsets = [0, 0, 0]
+
+  [Figures.Figure2]
+  # xlim = [] for autoscale
+  # xlim = [xmin, xmax]
+  xlim = []
+  # ylim = [] for autoscale
+  # [ymin, ymax]
+  ylim = [-50, 50]
+  # xticks = [] for autoscale
+  # [start, jump, end]
+  xticks = [0.0, 10.0, 0.0]
+  # yticks = [] for autoscale
+  # [start, jump, end]
+  yticks = [-180, 10, 180]
+
+  gains = [1, 1, 1]
+  offsets = [0, 0, 0]
+
+  [Figures.Figure3]
+  # xlim = [] for autoscale
+  # xlim = [xmin, xmax]
+  xlim = []
+  # ylim = [] for autoscale
+  # [ymin, ymax]
+  ylim = [-50, 50]
+  # xticks = [] for autoscale
+  # [start, jump, end]
+  xticks = [0.0, 10.0, 0.0]
+  # yticks = [] for autoscale
+  # [start, jump, end]
+  yticks = [-180, 10, 180]
+
+  gains = [1, 1, 1]
+  offsets = [0, 0, 0]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
